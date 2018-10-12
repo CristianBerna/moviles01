@@ -2,9 +2,11 @@ package com.example.asus.recylerview03;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.ShowableListMenu;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -14,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //mostrando un mensaje
+
+        Toast.makeText( this, "Agregando los elementos",Toast.LENGTH_SHORT).show();
 
         ArrayList<Fuente> lista = new ArrayList<Fuente>();
         lista.add(new Fuente("Imagen Numero 1",R.drawable.uno,0));
